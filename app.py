@@ -9,7 +9,7 @@ from datetime import datetime
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-MONGODB_URI = os.environ.get("MONGODB_URI")
+MONGODB_URI = os.environ.get("MONGODB_URL")
 DB_NAME =  os.environ.get("DB_NAME")
 
 client = MongoClient(MONGODB_URI)
